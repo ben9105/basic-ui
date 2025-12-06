@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* button text for both colors */
+    --alabaster-grey: #FFFDF5;
+
+    /* JS Color changes */
+    /* light background color */
+    --background-color: #efefef;
+    /* dark-mode is #384959 set in JS */
+
+    --text-color: #080d21;
+    /* dark-mode is #FFFDF5 set in JS */
+
+    --content-box-color: #fcf9fa;
+    /* dark-mode is #576879 set in JS */
+
+    --button-background-color: #93032e;
+    /* dark-mode is #d65108 set in JS */
+
+    --footer-background-color: #ACC8E5;
+    /* dark-mode is #023047 set in JS */
+
+    --footer-text-color: #112A46;
+    /* dark-mode is #FFFDF5 set in JS */
+
+    --title-shadow: 0.1px 0.2px 0.3px hsl(0deg 0% 71% / 0.28),
+        0.4px 0.7px 0.9px -1.2px hsl(0deg 0% 71% / 0.29),
+        1.3px 2.6px 3.3px -2.4px hsl(0deg 0% 71% / 0.3);
+    /* dark-mode is 0.1px 0.2px 0.3px hsl(210deg 30% 18% / 0.28),
+        0.4px 0.7px 0.9px -1.2px hsl(210deg 30% 18% / 0.29),
+        1.3px 2.6px 3.3px -2.4px hsl(210deg 30% 18% / 0.3) set in JS */
+
+    /* shadow "--shadow-elevation-medium-light"*/
+    --box-shadow: 0.3px 0.5px 0.7px hsl(0deg 0% 52% / 0.36),
+        0.8px 1.6px 2px -0.8px hsl(0deg 0% 52% / 0.36),
+        2.1px 4.1px 5.2px -1.7px hsl(0deg 0% 52% / 0.36),
+        5px 10px 12.6px -2.5px hsl(0deg 0% 52% / 0.36);
+    /* dark-mode box shadow */
+    /* --shadow-elevation-medium-dark:
+        0.3px 0.5px 0.7px hsl(221deg 77% 5% / 0.36),
+        0.8px 1.6px 2px -0.8px hsl(221deg 77% 5% / 0.36),
+        2.1px 4.1px 5.2px -1.7px hsl(221deg 77% 5% / 0.36),
+        5px 10px 12.6px -2.5px hsl(221deg 77% 5% / 0.36);  */
+
+    /* --white: #ffffffff;
+    --platinum: #eeeeeeff;
+    --alabaster-grey: #e5e5e5ff;
+    --alabaster-grey-2: #dcdcdcff;
+    --dust-grey: #d2d2d2ff;
+    --silver: #c9c9c9ff;
+    --silver-2: #bfbfbfff;
+    --silver-3: #b5b5b5ff;
+    --silver-4: #aaaaaaff;
+    --cool-steel: #a0a0a0ff; */
+
+    /* light colors */
+    /* --tuscan-orange: #d65108;
+    --bubblegum-tint: #e88baa;
+    --steel-blue: #ACC8E5;
+    --dark-blue: #112A46;
+    --cool-gray: #023047;
+    --baltic-blue: #2c6097;
+    --regal-navy: #163e72;
+    --alabaster-grey: #FFFDF5;
+    --platinum: #efefef;
+    --snow: #fcf9fa;
+    --silver: #bfbfbf;
+    --ink-black: #080d21; */
+
+    /* CSS HEX */
+    /* --cerulean: #077187; */
+    /* --prussian-blue: #14213d; */
+    /* --prussian-blue: #384959; */
+    /* --prussian-blue-2: #576879; */
+    /* --prussian-blue-2: rgb(44, 62, 100); */
+    /* --spicy-orange: #d65108; */
+    /* --alabaster-grey: #e5e5e5; */
+    /* --burgundy: #93032e; */
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#body-wrapper {
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+.header {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 2em;
+}
+
+#format-title {
+    border-radius: 5px;
+    padding: 0.15rem;
+    box-shadow: var(--title-shadow);
+}
+
+h3 {
+    padding-block-end: 0.5rem;
+}
+
+.container {
+    padding: 1em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-areas:
+        "one one two two"
+        "one one three three";
+}
+
+.content-box {
+    padding: 1rem;
+    background-color: var(--content-box-color);
+    color: var(text-color);
+    border-radius: 20px;
+
+    box-shadow: var(--box-shadow);
+}
+
+.first {
+    grid-area: one;
+}
+
+.second {
+    grid-area: two;
+}
+
+.third {
+    grid-area: three;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem 1fr 2rem;
+}
+
+#switch-mode {
+    cursor: pointer;
+}
+
+
+.send-btn {
+    background-color: var(--button-background-color);
+    color: var(--alabaster-grey);
+    font-family: inherit;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+}
