@@ -33,9 +33,9 @@
     --title-shadow: 0.1px 0.2px 0.3px hsl(0deg 0% 71% / 0.28),
         0.4px 0.7px 0.9px -1.2px hsl(0deg 0% 71% / 0.29),
         1.3px 2.6px 3.3px -2.4px hsl(0deg 0% 71% / 0.3);
-    /* dark-mode is 0.1px 0.2px 0.3px hsl(210deg 30% 18% / 0.28),
-        0.4px 0.7px 0.9px -1.2px hsl(210deg 30% 18% / 0.29),
-        1.3px 2.6px 3.3px -2.4px hsl(210deg 30% 18% / 0.3) set in JS */
+    /* dark-mode is 0.1px 0.2px 0.3px hsl(0deg 0% 71% / 0.28), 
+        0.4px 0.7px 0.9px -1.2px hsl(0deg 0% 71% / 0.29), 
+        1.3px 2.6px 3.3px -2.4px hsl(0deg 0% 71% / 0.3)') set in JS */
 
     /* shadow "--shadow-elevation-medium-light"*/
     --box-shadow: 0.3px 0.5px 0.7px hsl(0deg 0% 52% / 0.36),
